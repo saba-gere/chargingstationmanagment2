@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Charging Station Managment</string>
+    <string name="connect_to_station">Connect to station</string>
+    <string name="connect_to_web">Connect to web</string>
+    <string name="history">History</string>
+    <string name="help">Help</string>
+    <string name="about_app">About App</string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_station_connect">Connect To Station</string>
+    <string name="connect_to_station_title">connect to station</string>
+    <string name="bluetooth">ON</string>
+    <string name="textview">power used</string>
+    <string name="price">price</string>
+    <string name="date">date\\time of use</string>
+    <string name="duration_of_charging">duration of charging</string>
+    <string name="bluetooth2">OFF</string>
+</resources>

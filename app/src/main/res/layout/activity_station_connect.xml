@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".station_connect">
+
+    <RelativeLayout
+        android:id="@+id/pos"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            tools:ignore="RtlCompat" />
+
+        <Button
+            android:id="@+id/switch1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/bluetooth2"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="14sp"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/switch2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/bluetooth"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="14sp"
+            tools:ignore="RtlHardcoded"
+         />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/switch2"
+            android:layout_marginLeft="-317dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/connect_to_station_title"
+            android:textSize="24sp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/textview"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView16"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/price" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView17"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/date" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView18"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/duration_of_charging"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="25dp"
+            android:layout_alignLeft="@+id/textView16"
+            android:layout_marginLeft="150dp"
+            android:text="AutoCompleteTextView" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/autoCompleteTextView2"
+            android:layout_marginTop="15dp"
+            android:layout_alignLeft="@+id/textView17"
+            android:layout_marginLeft="150dp"
+            android:text="AutoCompleteTextView" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/autoCompleteTextView3"
+            android:layout_marginTop="15dp"
+            android:layout_alignLeft="@+id/textView18"
+            android:layout_marginLeft="150dp"
+            android:text="AutoCompleteTextView" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/autoCompleteTextView4"
+            android:layout_marginTop="15dp"
+            android:layout_alignLeft="@+id/textView20"
+            android:layout_marginLeft="150dp"
+            android:text="AutoCompleteTextView" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="103dp"
+            android:layout_marginLeft="103dp"
+            android:layout_marginBottom="21dp"
+            android:text="Total power of the day" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/autoCompleteTextView5"
+            android:layout_alignEnd="@id/textView21"
+            android:layout_alignRight="@id/textView21"
+            android:layout_marginStart="100dp"
+
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="-86dp"
+            android:layout_marginRight="-86dp"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:text="BlueTooth"
+            android:textColor="@android:color/holo_blue_light" />
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
